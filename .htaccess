@@ -1,0 +1,20 @@
+DirectoryIndex index.php
+
+RewriteEngine On
+
+
+RewriteRule ^home?$ index.php?page=home
+
+RewriteRule ^single-([a-z0-9]+)?$ index.php?page=single&id=$1
+
+ErrorDocument 404 http://localhost/template/error
+
+
+
+
+
+
+
+
+
+
